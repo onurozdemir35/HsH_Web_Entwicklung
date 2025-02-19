@@ -1,0 +1,22 @@
+<!DOCTYPE html >
+<head>
+    <title>Button</title>
+</head>
+
+<body>
+    <a href="https://www.google.com" target="_blank">
+    <button onclick="klick()"  style="background-color:blueviolet;
+    color:rgb(37, 38, 39)  ;
+    border-radius:10px;">Klicken</button>
+    </a>
+    <p lang="de" id="text">Klicken Sie auf die Schaltfläche!</p>
+
+    <script>
+        function klick()
+        {
+            document.getElementById("text").innerHTML="Sie haben die Schaltfläche gedrückt"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Beispiel</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            
+            align-items: center;
+            height: 200px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border:#000 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                height:auto;
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 80%;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                margin: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox Örneği</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>
